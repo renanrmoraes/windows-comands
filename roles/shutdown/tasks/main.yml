@@ -1,0 +1,4 @@
+---
+- name: Servidores Windows
+  import_tasks: desliga_servidores.yml
+  when: "'windows' in group_names"
