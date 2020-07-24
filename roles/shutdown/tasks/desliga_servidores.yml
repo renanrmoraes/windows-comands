@@ -1,6 +1,9 @@
 ---
-- name: (WINDOWS) Enviando comando "shutdown /s /t 10 /c "Ansible Command""
-  win_shell: "shutdown /s /t 10 /c 'Shutdown executado para realização de midança dos servidores de localidade'"
+- name: (WINDOWS) Enviando comando "shutdown /s /t 1"
+  win_shell: "shutdown /s /t 1"
   args:
     executable: cmd
   ignore_errors: yes
+  register: rs_cmd
+
+- debug: var=rs_cmd

@@ -2,6 +2,6 @@
   gather_facts: false
   tasks:
 
-    - name: Install
+    - name: Win Command
       include_role:
         name: "shutdown"

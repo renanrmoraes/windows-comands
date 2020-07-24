@@ -1,2 +1,3 @@
 ---
 # vars file for shutdown
+v_comment: "{{ comment | default('Ansible Command') }}"
